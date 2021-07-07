@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
 import React from "react";
+import styled from "@emotion/styled";
 
 export interface IBasicButtonProps {
   text?: string;
@@ -13,8 +13,15 @@ export const BasicButton: React.FC<IBasicButtonProps> = ({ text, onClick }) => {
 };
 
 const Button = styled.button`
+  color: #f8f5f5aa;
+  background-color: #246ab9;
+  border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #ffff;
-  border: 1px solid #ffead0;
-  padding: 8px 64px;
+  padding: 1em 3em;
+  font-size: 1rem;
+  line-height: 1.25em;
+
+  :hover {
+    transform: scale(1.07);
+  }
 `;
